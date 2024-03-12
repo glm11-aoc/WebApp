@@ -2,13 +2,33 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://www.google.com/recaptcha/api.js?render=6LdwAmEpAAAAAFVUlRTHbp4bL3NFswBc5nn53Wal"></script>
+<!-- make rsi for google captcha -->
+<scritp src="index.js"></scritp>
+
+
+
 <body>
-<p>
-    <H1>
-        Hi Jack
-    </H1>
-</p>
+<main>
+    <div>
+        <h1>Login</h1>
+    </div>
+    <form action="./php/auth.php" method="post">
+        <input type="text" name="txtUser" placeholder="Username" id="username">
+        <input type="password" name="txtPass" placeholder="Password" id="password">
+        <div>
+            <input type="checkbox">
+            <label>Remember Me</label>
+        </div>
+        <button type="submit">Login</button>
+    </form>
+</main>
 </body>
 </html>
